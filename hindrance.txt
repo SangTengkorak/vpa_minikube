@@ -1,0 +1,1 @@
+- must run *vpa.yml in same folder as where autoscaler folder is located
