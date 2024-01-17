@@ -1,22 +1,11 @@
-Prequisite
-- Enable metrics-server in minikube with this syntax:
-minikube addons enable metrics-server
+//About VPA
+https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/
 
-ToDo
-- Build vpa component in autoscaler folder:
-./autoscaler/vertical-pod-autoscaler/hack/vpa-up.sh
+//To enable VPA deployment custom name, please install necessary CRD updates
+https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler#installation
 
-- Create all components (Deployment, Service, and VPA):
-kubectl create -f .
+//VPA lab with K8s configured apps
+https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengusingverticalpodautoscaler.htm
 
-- To get accessible address, run:
-minikube service list
-
-- Syntax to test app:
-ADDRESS:PORT/jktt <--Diplay Jakarta time
-ADDRESS:PORT/spt <--Diplay Sothpole time
-ADDRESS:PORT/nyct <--Diplay Newyork time
-
-- Clean everything with :
-kubectl delete -f .
-./autoscaler/vertical-pod-autoscaler/hack/vpa-down.sh
+//VPA with custom resource
+https://www.linkedin.com/pulse/scaling-kubernetes-pods-automatically-vertical-pod-adamson-ih7vc?trk=article-ssr-frontend-pulse_more-articles_related-content-card
