@@ -8,6 +8,8 @@ spec:
     apiVersion: "apps/v1"
     kind: Deployment
     name: webtime-deployment
+  updatePolicy:
+    updateMode: "Initial"
   resourcePolicy:
     containerPolicies:
       - containerName: '*'
